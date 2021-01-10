@@ -41,6 +41,19 @@ Description: Portfolio/CV/Resume HTML Template
   padding: 0;
 }
 
+.fa-custom-github:before {
+  content: "\f09b"; }
+
+.fa-custom-linkedin-in:before {
+  content: "\f0e1"; }
+
+.fa-custom-file:before {
+  content: "\f15b"; }
+
+  .fa-custom-envelope:before {
+    content: "\f0e0"; }
+
+
 html {
   margin: 0 !important;
   overflow: auto !important;
