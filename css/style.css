@@ -1030,6 +1030,141 @@ section.home.light .social-icons li a:hover {
 /*=================================================================*/
 /*                      PORTFOLIO                              
 /*=================================================================*/
+.project-gallery {
+  padding: 70px 0px 0px;
+  position: relative;
+}
+.project-gallery .project-gallery-filter .project-gallery-menu {
+  margin-bottom: 24px;
+  padding-left: 0px;
+}
+.project-gallery .project-gallery-filter .project-gallery-menu .filter {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 5px;
+  transition: all 0.3s ease-in;
+  color: #555;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+  border: 1px solid #7280ff;
+}
+.project-gallery .project-gallery-filter .project-gallery-menu .filter.active, .project-gallery .project-gallery-filter .project-gallery-menu .filter:hover {
+  background: #7280ff;
+  color: #fff;
+}
+.project-gallery .project-gallery-item {
+  padding-top: 6px;
+}
+
+.gallery-item-content {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+.gallery-item-content .item-thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-item-content .item-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  /* background: rgba(0, 0, 0, 0.24);
+  opacity: 0.5; */
+}
+
+.gallery-item-content:hover .item-thumbnail img {
+  width: 100%;
+  border-radius: 10px;
+  /* background: rgba(0, 0, 0, 0.24);
+  opacity: 0.5; */
+  filter: brightness(25%);
+  transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.gallery-item-content .item-thumbnail .content-overlay {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+  height: 86%;
+  border-radius: 10px;
+  opacity: 0;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+.gallery-item-content .item-thumbnail .content-overlay .content .links {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  top: 50%;
+  left: 50%;
+  color:white !important;
+  transition: all 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  transform: translate(-50%, -50%);
+  /* transition: all 2s ease-in;
+  animation-delay: 2s; */
+
+}
+
+.gallery-item-content .item-thumbnail .content-overlay .content .links p{
+  
+  color:white !important;
+
+}
+
+.gallery-item-content .item-thumbnail .content-overlay .content .links a {
+  margin: 4px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  background-color: white;
+  
+}
+/* .gallery-item-content .item-thumbnail .content-overlay .content .links a:hover {
+ 
+} */
+.gallery-item-content .item-thumbnail .content-overlay .content .links a.image-preview {
+  margin-right: 12px;
+}
+.gallery-item-content .item-thumbnail:hover .content-overlay {
+  opacity: 1;
+  width: 90%;
+}
+
+.links h5{
+  color: white;
+}
+.gallery-item-content .item-thumbnail:hover .content-overlay .content .links {
+  opacity: 1;
+  animation-delay: 2s;
+  transition: box-shadow 0.7s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  -webkit-transition: box-shadow 0.7s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  -moz-transition: box-shadow 0.7s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  -o-transition: box-shadow 0.7s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  -ms-transition: box-shadow 0.7s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  visibility: visible;
+}
+
+.portfolios-page {
+  padding: 100px 0px 100px;
+}
+.portfolios-page .gallery-item-content {
+  margin-bottom: 30px;
+}
+
+
+
 .portfolio-wrapper [class*=col-] {
   margin-top: 15px;
   margin-bottom: 15px;
